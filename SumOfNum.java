@@ -7,10 +7,10 @@ public class SumOfNumbers
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
         int sum = 0;
-        for (int i = 1; i <= num; i++)
+        for (int number = 1; number <= num; number++)
         {
-            sum += i;
-            System.out.print(" "+ i);
+            sum += number;
+            System.out.print(" "+ number);
         }
         System.out.println(" "+ sum);
     }
