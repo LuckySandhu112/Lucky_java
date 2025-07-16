@@ -5,15 +5,15 @@ public class OddEven
     {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        for(int i=1;i<=num;i++)
+        for(int number=1;number<=num;number++)
         {
-            if(i%2==0)
+            if(number%2==0)
             {
-                System.out.print(" Even number: "+ i);
+                System.out.print(" Even number: "+ number);
             }
             else
             {
-                System.out.print(" Odd number: "+ i);
+                System.out.print(" Odd number: "+ number);
             }
         }
     }
