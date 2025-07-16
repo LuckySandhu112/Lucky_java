@@ -6,14 +6,14 @@ public class TWODSumOfArrays
         int sum =0;
         Scanner sc=new Scanner(System.in);
         int arr[][] = new int[3][3];
-        for(int i=0;i<3;i++)
+        for(int rows=0;rows<3;rows++)
         {
-            for(int j=0;j<3;j++)
+            for(int columns=0;columns<3;columns++)
             {
-                arr[i][j] = sc.nextInt();
-                if(i==j)
+                arr[rows][columns] = sc.nextInt();
+                if(rows==columns)
                 {
-                    sum+=arr[i][j];
+                    sum+=arr[rows][columns];
                 }
                 else
                 {
@@ -21,11 +21,11 @@ public class TWODSumOfArrays
                 }
             }
         }
-        for(int i=0;i<3;i++)
+        for(int rows=0;rows<3;rows++)
         {
-            for(int j=0;j<3;j++)
+            for(int columns=0;columns<3;columns++)
             {
-                System.out.print(arr[i][j]);
+                System.out.print(arr[rows][columns]);
             }
             System.out.println();
         }
