@@ -5,24 +5,24 @@ public class ArrayBorder
     {
         Scanner sc = new Scanner(System.in);
         int arr[][] = new int[3][3];
-        for(int i=0;i<3;i++)
+        for(int rows=0;rows<3;rows++)
         {
-            for(int j=0;j<3;j++)
+            for(int columns=0;columns<3;columns++)
             {
-                arr[i][j]=sc.nextInt();
+                arr[rows][columns]=sc.nextInt();
             }
         }
-        for(int i=0;i<3;i++)
+        for(int rows=0;rows<3;rows++)
         {
-            for(int j=0;j<3;j++)
+            for(int columns=0;columns<3;columns++)
             {
-                if(i==1&&j==1)
+                if(rows==1&&columns==1)
                 {
                     System.out.print("  ");
                 }
                 else
                 {
-                    System.out.print(arr[i][j]+ " ");
+                    System.out.print(arr[rows][columns]+ " ");
                 }
             }
             System.out.println();
