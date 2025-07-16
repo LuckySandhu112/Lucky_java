@@ -7,41 +7,41 @@ public class FrequencyOfNumber
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the number of elements: ");
-        int n = sc.nextInt();
+        int number = sc.nextInt();
 
-        int[] arr = new int[n];
-        int[] freq = new int[n];
+        int[] arr = new int[number];
+        int[] freq = new int[number];
 
-        System.out.println("Enter " + n + " numbers:");
-        for (int i = 0; i < n; i++)
+        System.out.println("Enter " + number + " numbers:");
+        for (int row = 0; row < n; row++)
         {
-            arr[i] = sc.nextInt();
-            freq[i] = -1;
+            arr[row] = sc.nextInt();
+            freq[row] = -1;
         }
 
-        for (int i = 0; i < n; i++)
+        for (int row = 0; row < number; row++)
         {
-            if (freq[i] == -1)
+            if (freq[row] == -1)
             {
                 int count = 1;
-                for (int j = i + 1; j < n; j++)
+                for (int column = row + 1; column < number; column++)
                 {
-                    if (arr[i] == arr[j])
+                    if (arr[row] == arr[column])
                     {
                         count++;
-                        freq[j] = 0;
+                        freq[column] = 0;
                     }
                 }
-                freq[i] = count;
+                freq[row] = count;
             }
         }
 
         System.out.println("Frequency of each number:");
-        for (int i = 0; i < n; i++)
+        for (int row = 0; row < number; row++)
         {
-            if (freq[i] != 0)
+            if (freq[row] != 0)
             {
-                System.out.println(arr[i] + " occurs " + freq[i] + " time(s)");
+                System.out.println(arr[row] + " occurs " + freq[row] + " time(s)");
             }
         }
     }
