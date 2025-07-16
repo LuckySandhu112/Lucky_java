@@ -10,22 +10,22 @@ public class SumOfArrays
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter 5 elements for array a:");
-        for (int row = 0; row < 5; row++)
+        for (int number = 0; number < 5; number++)
         {
-            Array1[row] = sc.nextInt();
+            Array1[number] = sc.nextInt();
         }
 
         System.out.println("Enter 5 elements for array b:");
-        for (int row = 0; row < 5; row++)
+        for (int number = 0; number < 5; number++)
         {
-            Array2[row] = sc.nextInt();
+            Array2[number] = sc.nextInt();
         }
 
         System.out.println("Sum of arrays:");
-        for (int row = 0; row < 5; row++)
+        for (int number = 0; number < 5; number++)
         {
-            Sum[row] = Array1[row] + Array2[row];
-            System.out.println(Sum[row]);
+            Sum[number] = Array1[number] + Array2[number];
+            System.out.println(Sum[number]);
         }
 
     }
