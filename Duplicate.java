@@ -9,23 +9,23 @@ public class Duplicate
 
         System.out.println("Duplicate letters:");
 
-        for (int i = 0; i < str.length(); i++)
+        for (int rows = 0; rows < str.length(); rows++)
         {
-            char ch = str.charAt(i);
+            char ch = str.charAt(rows);
             int count = 0;
 
-            for (int j = 0; j < str.length(); j++)
+            for (int columns = 0;columns < str.length(); columns++)
             {
-                if (str.charAt(j) == ch)
+                if (str.charAt(columns) == ch)
                 {
                     count++;
                 }
             }
 
             boolean alreadyPrinted = false;
-            for (int k = 0; k < i; k++)
+            for (int num = 0; num < rows; num++)
             {
-                if (str.charAt(k) == ch)
+                if (str.charAt(num) == ch)
                 {
                     alreadyPrinted = true;
                     break;
