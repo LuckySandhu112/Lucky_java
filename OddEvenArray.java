@@ -9,10 +9,10 @@ public class OddEvenArray
         int[] arr = new int[num];
         int even=0,odd=0;
         System.out.println("Enter " + num + " numbers:");
-        for (int i=0;i<num;i++)
+        for (int row=0;row<num;row++)
         {
-            arr[i] = sc.nextInt();
-            if (arr[i]%2==0)
+            arr[row] = sc.nextInt();
+            if (arr[row]%2==0)
             {
                 even++;
             }
