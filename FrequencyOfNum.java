@@ -11,7 +11,7 @@ public class FrequencyOfNumber
 
         int[] arr = new int[number];
         int[] freq = new int[number];
-
+        
         System.out.println("Enter " + number + " numbers:");
         for (int row = 0; row < n; row++)
         {
